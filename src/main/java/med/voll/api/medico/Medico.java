@@ -1,12 +1,16 @@
 package med.voll.api.medico;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import med.voll.api.endereco.Endereco;
 
 @Table(name = "medicos")
 @Entity(name = "Medico")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Medico {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
